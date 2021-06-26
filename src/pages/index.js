@@ -6,8 +6,8 @@ const Index = () => {
   return <div className="text-9xl text-center font-bold">Hello World</div>
 }
 
-Index.defaultProps = {
-  pages: [],
-}
+Index.propTypes = {}
+
+Index.defaultProps = {}
 
 export default Index
