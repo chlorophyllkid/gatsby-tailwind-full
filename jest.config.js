@@ -1,12 +1,11 @@
 module.exports = {
+  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.js'],
   transform: {
-    '^.+\\.js?$': `<rootDir>/.jest/jest-preprocess.js`,
+    '^.+\\.js?$': `<rootDir>/.jest/preprocess.js`,
   },
 
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [`node_modules/(?!(react)/)`],
-
-  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.js'],
 
   snapshotResolver: './.jest/snapshotResolver.js',
   snapshotSerializers: [
