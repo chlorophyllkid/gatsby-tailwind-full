@@ -1,0 +1,30 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Headline from './Headline'
+
+<Meta title="Atoms/Headline" component={Headline} decorators={[withA11y]} />
+
+# Headline
+
+<Story name="Headline H1" parameters={{ docs: { disable: true } }}>
+  <Headline tag="h1" className="text-center">
+    Headline H1
+  </Headline>
+</Story>
+
+<Story name="Headline H2" parameters={{ docs: { disable: true } }}>
+  <Headline tag="h2" className="text-center">
+    Headline H2
+  </Headline>
+</Story>
+
+<Story name="Headline H3" parameters={{ docs: { disable: true } }}>
+  <Headline tag="h3" className="text-center">
+    Headline H3
+  </Headline>
+</Story>
+
+## Properties
+
+<ArgsTable of={Headline} />

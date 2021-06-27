@@ -1,6 +1,10 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-exclude',
+      options: { paths: ['/**/*.snap'] },
+    },
     {
       resolve: 'gatsby-plugin-postcss',
       options: {

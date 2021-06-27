@@ -2,8 +2,14 @@ import React from 'react'
 
 import '../tailwind.css'
 
+import Headline from '../components/atoms/Headline/Headline'
+
 const Index = () => {
-  return <div className="text-9xl text-center font-bold">Hello World</div>
+  return (
+    <Headline tag="h1" className="text-center">
+      Hello World
+    </Headline>
+  )
 }
 
 Index.propTypes = {}

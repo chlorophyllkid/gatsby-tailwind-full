@@ -2,8 +2,14 @@ import React from 'react'
 
 import '../tailwind.css'
 
+import Headline from '../components/atoms/Headline/Headline'
+
 const Error404 = () => {
-  return <div className="text-9xl text-center font-bold">404</div>
+  return (
+    <Headline tag="h1" className="text-center">
+      404
+    </Headline>
+  )
 }
 
 Error404.propTypes = {}

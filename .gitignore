@@ -91,5 +91,8 @@ typings/
 .cache
 public
 
+# Storybook folder
+storybook-static
+
 # Mac OS folder information file
 .DS_Store
